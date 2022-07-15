@@ -117,6 +117,9 @@ a {
 }
 
 .hamburger>i {
+  display: none;
+
+
   @media(max-width:500px) {
     font-size: 5em;
     padding-left: 160px;
@@ -242,7 +245,7 @@ h1 {
 }
 
 .footer {
-  position: relatie;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;

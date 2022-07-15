@@ -11,72 +11,112 @@
   <script src="https://kit.fontawesome.com/b5f60ef14d.js" crossorigin="anonymous"></script>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="./assets/css/glowingico.css" rel="stylesheet">
   <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class="centered">
-    <h1 class="typing-text"></h1>
-  </section>
-  <div id="cards">
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <i class="fa-solid fa-dice-d20"></i>
-        </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <!-- <i class="fa-duotone fa-user-visitor"></i> -->
-            <i class="fa-solid fa-dice-d20"></i>
-            <div class="card-info-title">
-              <h3>About me</h3>
-              <h4>I'm not antisocial, I rolled low on charisma</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="hamburger">
+    <i class="fa-solid fa-bars-staggered"></i>
+  </div>
+  <header>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="./subpages/about.html" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <i class="fa-solid fa-code"></i>
+    <section class="centered">
+      <h1 class="typing-text"></h1>
+    </section>
+    <div id="cards">
+      <a href="./subpages/about.html">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-solid fa-dice-d20" id="glow"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <!-- <i class="fa-duotone fa-user-visitor"></i> -->
+                <i class="fa-solid fa-dice-d20"></i>
+                <div class="card-info-title">
+                  <h3>About me</h3>
+                  <h4>I'm not antisocial, I rolled low on charisma</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <i class="fa-solid fa-code"></i>
-            <div class="card-info-title">
-              <h3>Projects</h3>
-              <h4>I don`t know are these absolutely deserve to exist.</h4>
+      </a>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-code" id="glow"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <i class="fa-solid fa-code"></i>
+              <div class="card-info-title">
+                <h3>Projects</h3>
+                <h4>I don`t know are these absolutely deserve to exist.</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <!-- <i class="fa-duotone fa-unicorn"></i> -->
-          <i class="fa-solid fa-dragon"></i>
-        </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <i class="fa-solid fa-dragon"></i>
-            <div class="card-info-title">
-              <h3>Drawings</h3>
-              <h4>Made for chill, but kinda pretty <br>(I hope so) </h4>
+      <a href="https://github.com/Oliweirdo">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-brands fa-github" id="glow"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <!-- <i class="fa-duotone fa-user-visitor"></i> -->
+                <i class="fa-brands fa-github"></i>
+                <div class="card-info-title">
+                  <h3>GitHub</h3>
+                  <h4>Other repositories for other projects. More code than images.</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="https://www.artstation.com/iamthatrou">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <!-- <i class="fa-duotone fa-unicorn"></i> -->
+              <i class="fa-solid fa-dragon" id="glow"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-solid fa-dragon"></i>
+                <div class="card-info-title">
+                  <h3>Drawings</h3>
+                  <h4>Made for chill, but kinda pretty <br>(I hope so) </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <footer class="footer">
+        &copy;2022 Created by: Oliwia Matusik.
     </div>
-    <footer class="footer">
-      &copy;2022 Created by: Oliwia Matusik.
-  </div>
-  </footer>
-  </div>
-  <script src="assets/script/script.js"></script>
+    </footer>
+    </div>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

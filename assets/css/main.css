@@ -104,6 +104,9 @@ a:hover {
   width: auto;
 }
 
+.hamburger > i {
+  display: none;
+}
 @media (max-width: 500px) {
   .hamburger > i {
     font-size: 5em;
@@ -221,7 +224,7 @@ h1 {
   }
 }
 .footer {
-  position: relatie;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
