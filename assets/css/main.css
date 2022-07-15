@@ -4,6 +4,11 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  * {
+    margin: 0 auto;
+  }
+}
 
 :root {
   --bg-color: rgb(20, 20, 20);
@@ -11,7 +16,6 @@
 }
 
 body {
-  padding-top: 200px;
   align-items: center;
   background-color: var(--bg-color);
   display: block;
@@ -21,9 +25,90 @@ body {
   overflow: hidden;
   font-family: "Share Tech Mono", monospace;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   body {
     padding-top: 50px;
+    margin: 0 auto;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(222, 121, 166);
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+a:hover {
+  color: rgb(156, 104, 130);
+}
+
+.nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  opacity: 50%;
+  font-family: "Cinzel", serif;
+}
+.nav-logo {
+  height: 75px;
+  width: auto;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 500px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
+    position: relative;
+    padding-bottom: 50px;
+  }
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+.nav-link:hover {
+  color: rgb(156, 104, 130);
+}
+@media (max-width: 500px) {
+  .nav-item {
+    margin: 16px;
+    background: none;
+  }
+}
+
+.mainpage {
+  border-radius: 50%;
+  max-height: 400px;
+  width: auto;
+}
+
+@media (max-width: 500px) {
+  .hamburger > i {
+    font-size: 5em;
+    padding-left: 160px;
+    display: block;
   }
 }
 
@@ -94,16 +179,19 @@ body {
   }
 }
 .centered {
+  padding-top: 100px;
   display: block;
   margin: 0 auto;
   width: 450px;
   padding-bottom: 50px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .centered {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     display: block;
+    padding-top: 10px;
+    overflow: hidden;
   }
 }
 
@@ -111,7 +199,7 @@ h1 {
   margin: 0;
   font-family: "Share Tech Mono", monospace;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   h1 {
     width: 450px;
     margin: 0 auto;
@@ -133,13 +221,21 @@ h1 {
   }
 }
 .footer {
-  position: fixed;
+  position: relatie;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: var(--bg-color);
   color: rgba(222, 121, 166, 0.2);
   text-align: center;
+}
+@media (max-width: 500px) {
+  .footer {
+    width: 400px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .link {
@@ -170,6 +266,13 @@ h1 {
   flex-direction: column;
   position: relative;
   width: 300px;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .card:hover::before {
@@ -288,8 +391,8 @@ i {
 }
 @media (max-width: 500px) {
   .card {
-    width: 400px;
-    margin: 0 auto;
+    width: 350px;
+    padding-bottom: 15px;
     display: block;
   }
   .card-image {

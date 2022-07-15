@@ -1,15 +1,8 @@
 #glow {
-
     color: rgba(222, 121, 166, 0.4);
-
     animation: animate 3s linear infinite;
-}
-
-#glow {
     animation-delay: 0.3s;
 }
-
-
 
 @keyframes animate {
     from {

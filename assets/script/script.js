@@ -1,3 +1,18 @@
+//burger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-menu").forEach(n => n.
+    addEventListener("click",() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+
 document.getElementById("cards").onmousemove = e => {
     for(const card of document.getElementsByClassName("card")) {
       const rect = card.getBoundingClientRect(),
@@ -9,7 +24,7 @@ document.getElementById("cards").onmousemove = e => {
     };
   }
 
-  // get the element
+  // tekścior
 const text = document.querySelector('.typing-text');
 
 // make a words array
