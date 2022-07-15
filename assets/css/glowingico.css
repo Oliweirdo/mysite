@@ -1,0 +1,16 @@
+#glow {
+  color: rgba(222, 121, 166, 0.4);
+  animation: animate 3s linear infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=glowingico.css.map */
