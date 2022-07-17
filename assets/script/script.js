@@ -30,7 +30,7 @@ const text = document.querySelector('.typing-text');
 // make a words array
 const words = [
   "Oliwia Matusik.",
-  "Frontend Developer.",
+  "Junior Frontend Developer.",
 ];
 
 // start typing effect
