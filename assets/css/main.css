@@ -22,7 +22,7 @@ body {
   height: 100vh;
   justify-content: center;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Share Tech Mono", monospace;
 }
 @media (max-width: 500px) {
@@ -120,6 +120,7 @@ a:hover {
   max-width: 1000px;
   font-family: "Share Tech Mono", monospace;
   color: rgba(222, 121, 166, 0.4);
+  text-align: justify;
 }
 
 .about > img {
@@ -135,11 +136,8 @@ a:hover {
 
 .right__side__about,
 .left__side__about {
-  text-align: center;
-  align-items: center;
   font-size: 1vw;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 350px;
   padding-bottom: 150px;
   text-align: justify;
 }
@@ -196,6 +194,18 @@ a:hover {
     padding-top: 10px;
     overflow: hidden;
   }
+}
+
+.iframe {
+  opacity: 90%;
+}
+
+.centered_wide {
+  width: 750px;
+  padding-bottom: 50px;
+  display: block;
+  margin: 0 auto;
+  opacity: 50%;
 }
 
 h1 {
